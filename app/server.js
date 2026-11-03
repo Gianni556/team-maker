@@ -26,8 +26,8 @@ app.get('/*splat', (req, res, next) => {
   res.sendFile(path.join(__dirname, CLIENT_FOLDER, 'index.html'))
 });
 
-http.createServer(app).listen(PORT, '0.0.0.0', () => {
-  console.log(`Item-Finder up and running on http://0.0.0.0:${PORT}`);
+http.createServer(app).listen(PORT, '127.0.0.1', () => {
+  console.log(`Item-Finder up and running on http://127.0.0.1:${PORT}`);
 });
 
 
