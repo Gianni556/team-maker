@@ -1,6 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-
 export default {
   root: 'client-src',
   build: {
