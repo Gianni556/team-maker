@@ -1,4 +1,4 @@
-# app template syp3 - 2025
+# Team maker
 
 Dieses Projekt ist eine Full-Stack-Webanwendung mit einem **Express-Backend** (Node.js, Port 8080) und einem **Lit-Frontend** (Web Components, Port 8081 im Dev-Modus).
 
