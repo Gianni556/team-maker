@@ -3,15 +3,15 @@ import { html } from 'lit';
 // base
 import { BSLitElement } from '../base/bs-lit-element';
 
+
 class HomeView extends BSLitElement {
   render() {
     return html`
       <h1>Home</h1>
       <p>Welcome to Team Maker</p>
 
-      <div class="container mt-2">
-          <div class="alert alert-primary">Bootstrap funktioniert!</div>
-      </div>                
+      <a href="/createGroup">Create Group</a>
+
     `;
   }
 }

@@ -14,6 +14,7 @@ import './components/toast-container.js';
 // views
 import './views/home-view.js';
 import './views/about-view.js';
+import './views/create-group-view.js'
 
 import { createToastService } from './services/toast-service.js';
 
@@ -150,6 +151,7 @@ class MainView extends BSLitElement {
   _router = new Router(this, [
     { path: '/', render: () => html`<home-view></home-view>` },
     { path: '/about', render: () => html`<about-view></about-view>` },
+    { path: '/createGroup', render: () => html`<create-group-view></create-group-view>` },
     { path: '/*', render: () => html`<home-view></home-view>` }
   ]);
 
