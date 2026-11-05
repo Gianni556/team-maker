@@ -13,9 +13,6 @@ import './components/toast-container.js';
 
 // views
 import './views/home-view.js';
-import './views/test-toast-view.js';
-import './views/data-fetching-view.js';
-import './views/create-image-view.js';
 import './views/about-view.js';
 
 import { createToastService } from './services/toast-service.js';
@@ -153,11 +150,6 @@ class AppRoot extends BSLitElement {
   _router = new Router(this, [
     { path: '/', render: () => html`<home-view></home-view>` },
     { path: '/about', render: () => html`<about-view></about-view>` },
-    { path: '/hello-world', render: () => html`<hello-world-view></hello-world-view>` },
-    { path: '/name-tag', render: () => html`<name-tag-view></name-tag-view>` },
-    { path: '/data-fetching', render: () => html`<data-fetching-view></data-fetching-view>` },
-    { path: '/test-toast', render: () => html`<test-toast-view></test-toast-view>` },
-    { path: '/create-image', render: () => html`<create-image-view></create-image-view>` },
     { path: '/*', render: () => html`<home-view></home-view>` }
   ]);
 
@@ -188,12 +180,11 @@ class AppRoot extends BSLitElement {
 
         <nav class="sidebar ${this._menuOpen ? 'open' : ''}">
           <div class="sidebar-header">
-            <h5>your title app</h5>
+            <h5>Team Maker</h5>
           </div>
+          <!-- add a tag for new hamburger menue  -->
           <div class="sidebar-nav" @click=${this._closeMenu}>
             <a href="/">Home</a>
-            <a href="/test-toast">Toast Demo</a>
-            <a href="/data-fetching">Data Fetching</a>
             <a href="/about">About</a>
           </div>
         </nav>

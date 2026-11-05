@@ -7,7 +7,7 @@ class HomeView extends BSLitElement {
   render() {
     return html`
       <h1>Home</h1>
-      <p>Willkommen auf der Startseite1.</p>
+      <p>Welcome to Team Maker</p>
 
       <div class="container mt-2">
           <div class="alert alert-primary">Bootstrap funktioniert!</div>
