@@ -17,7 +17,7 @@ import './views/about-view.js';
 
 import { createToastService } from './services/toast-service.js';
 
-class AppRoot extends BSLitElement {
+class MainView extends BSLitElement {
 
   static styles = [
     super.styles,
@@ -182,7 +182,7 @@ class AppRoot extends BSLitElement {
           <div class="sidebar-header">
             <h5>Team Maker</h5>
           </div>
-          <!-- add a tag for new hamburger menue  -->
+          <!-- add <a> tag for new hamburger menue  -->
           <div class="sidebar-nav" @click=${this._closeMenu}>
             <a href="/">Home</a>
             <a href="/about">About</a>
@@ -192,7 +192,7 @@ class AppRoot extends BSLitElement {
         <div class="main">
           <div class="topbar">
             <button class="menu-btn" @click=${this._toggleMenu}>&#9776;</button>
-            <strong>Item Finder</strong>
+            <strong>Team Maker</strong>
           </div>
 
           <div class="content">
@@ -201,10 +201,14 @@ class AppRoot extends BSLitElement {
         </div>
 
         <toast-container id="toastContainer01"></toast-container>
+
+        <!-- <div class="footer">
+          @ 2026 'Team Maker' from Gianni556 - All rights reserved
+        </div> -->
       </div>
     `;
   }
 }
 
-customElements.define('app-root', AppRoot);
+customElements.define('main-view', MainView);
 

@@ -7,7 +7,7 @@ class AboutView extends BSLitElement {
   render() {
     return html`
       <h1>About</h1>
-      <p>This is the about page of Team Maker</p>      
+      <p>Welcome to Team Maker</p>      
     `;
   }
 }
